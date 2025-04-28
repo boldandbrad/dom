@@ -1,12 +1,11 @@
-> [!IMPORTANT]
-> **dom** is currently in early development. This means it is missing key
-> features and is highly unstable. Do not use it to manage critical files.
-> Consider dropping a star to follow dom's progress.
+> [!IMPORTANT] **dom** is currently in early development. This means it is
+> missing key features and is highly unstable. Do not use it to manage critical
+> files. Consider dropping a star to follow dom's progress.
 
 # dom
 
-**dom** (Polish for "home") is a configurable, symlink-based dotfile manager.
-It helps you back up and reuse the most important files in your $HOME directory
+**dom** (Polish for "home") is a configurable, symlink-based dotfile manager. It
+helps you back up and reuse the most important files in your $HOME directory
 with ease.
 
 ## Goals
@@ -23,7 +22,8 @@ with ease.
 - CLI to automatically add and drop files from the configuration
 - Dry-run mode to visualize changes before applying
 - Conditional directives (tbd)
-- Profiles for separating personal vs work or handling system specific configs (tbd)
+- Profiles for separating personal vs work or handling system specific configs
+  (tbd)
 
 ## Install
 
@@ -57,7 +57,10 @@ Apply the default configuration to the system.
 dom apply
 ```
 
-Add `~/.zshrc` to the default configuration. This copies `~/.zshrc` to `{dotfiles_dir}/config/zsh/zshrc`. If no such file exists, create an empty copy in the dotfile dir. If only one argument is provided, add the file to the repo root.
+Add `~/.zshrc` to the default configuration. This copies `~/.zshrc` to
+`{dotfiles_dir}/config/zsh/zshrc`. If no such file exists, create an empty copy
+in the dotfile dir. If only one argument is provided, add the file to the repo
+root.
 
 ```sh
 dom add ~/.zshrc config/zsh/zshrc
@@ -81,7 +84,8 @@ Replace dom managed symlinks with copies of actual files from the repo.
 dom uninstall
 ```
 
-List all dotfiles managed by dom and whether or not they have been modified from last commit
+List all dotfiles managed by dom and whether or not they have been modified from
+last commit
 
 ```sh
 dom status
